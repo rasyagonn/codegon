@@ -1,0 +1,110 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2a547d;
+  color: aliceblue;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Pusatkan div profil */
+  align-items: center;
+  flex-direction: column; /* Tumpuk elemen secara vertikal */
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile h1 {
+  margin: 10px 0;
+}
+
+.artwork-container {
+  display: flex;
+  margin: 30px 30px;
+}
+
+.artwork {
+  flex: 1;
+  text-align: center;
+}
+
+.artwork img {
+  max-width: 100%;
+  height: auto;
+}
+
+.description {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.informasi {
+  background-color: #204161;
+  padding: 20px;
+  margin-top: 150px;
+  color: aliceblue;
+  border-radius: 15px;
+}
+.informasi h2 {
+  margin: 2px;
+  padding-bottom: 10px;
+}
+
+.informasi ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.informasi li {
+  margin-bottom: 10px;
+}
+
+.informasi li strong {
+  display: inline-block;
+  width: 120px;
+}
+
+.description h2.Keterangan {
+  padding: 5px;
+  padding-left: 10px;
+  background-color: #d5ceceab;
+}
+
+aside {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center; /* Pusatkan div profil */
+  align-items: center;
+}
+
+aside a {
+  color: black;
+}
+
+@media only screen and (max-width: 800px) {
+  .artwork-container {
+    flex-direction: column; /* Mengubah tata letak menjadi tumpuk vertikal di bawah 600px */
+  }
+
+  .description {
+    padding-left: 0; /* Menghapus padding kiri pada deskripsi */
+    padding-top: 20px; /* Menambahkan padding atas pada deskripsi */
+    margin-top: 0; /* Menghapus margin atas pada deskripsi */
+  }
+
+  .informasi {
+    margin-top: 0px; /* Menambahkan margin atas pada informasi */
+  }
+  
+}
